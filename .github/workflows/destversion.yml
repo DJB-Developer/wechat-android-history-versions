@@ -1,0 +1,23 @@
+name: Wechat Android Dest Version
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+    
+jobs:
+  check_wechat_android_new_version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+      - name: Check new version and push
+        env: 
+          GHTOKEN: ${{ secrets.GHTOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: 
+          bash -x ./scripts/updateVersion.sh
+          
