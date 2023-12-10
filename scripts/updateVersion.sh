@@ -39,10 +39,10 @@ function prepare_commit() {
 function main() {
     now_sum256=`shasum -a 256 README.md | awk '{print $1}'`
     gh_login
-    check_update
-    wechat_download
+    check_update    
     latest_sum256=`shasum -a 256 README.md | awk '{print $1}'`
     if [ "$now_sum256" != "$latest_sum256" ]; then
+        wechat_download
         git add . && git commit -m "$version_info" && git push origin main
     fi        
 }
