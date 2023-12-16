@@ -65,7 +65,7 @@ function getUpdateInfo(html)
 {
     const pattern_date = /发布日期： (\d{4}-\d{2}-\d{2})/;
     const pattern_version = /发布版本： (.*?)</;
-    const pattern_link = /<a\s+href=(https?:\/\/[^"\'\s]+)\s+target=_blank>下载最新版本<\/a>/i;
+    const pattern_link = /<a\s+href=(.*?)\s+target=_blank>下载最新版本<\/a>/i;
     const update_date = html.match(pattern_date);
     const update_version = html.match(pattern_version);
     const update_link = html.match(pattern_link);
@@ -73,14 +73,12 @@ function getUpdateInfo(html)
         // console.log(update_date[1]);
         // console.log(update_version[1]);
         // console.log(update_link[1]);
-        const fileName = update_link[1].split('/')[5];
-        const version = update_version[1].split(' ')[1];
         return {
             text: `| ${update_version[1]} | (${update_date[1]}) | [${update_link[1]}](${update_link[1]}) |`,
             version_info: update_version[1],
             url: update_link[1],
-            fileName: fileName,
-            version: version
+            fileName: update_link[1].split('/')[5],
+            version: update_version[1].split(' ')[1]
         };
     }
     
