@@ -32,7 +32,7 @@ function prepare_commit() {
     echo "更新日期: $(date -u '+%Y-%m-%d %H:%M:%S') (UTC)" >> ./wechatAndroid/$file_name.sha256
     echo "下载地址: $download_link" >> ./wechatAndroid/$file_name.sha256
     echo "Sha256: $apk_sum256" >> ./wechatAndroid/$file_name.sha256
-    gh release create v"$version"_`date -u '+%Y%m%d'` -F ./wechatAndroid/$file_name.sha256 -t "$apk_version"
+    gh release create v"$version"_`date -u '+%Y%m%d'` ./wechatAndroid/$file_name -F ./wechatAndroid/$file_name.sha256 -t "$apk_version"
     rm -rfv wechatAndroid
 }
 
