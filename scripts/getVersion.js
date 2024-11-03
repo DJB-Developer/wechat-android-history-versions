@@ -49,7 +49,10 @@ async function updateVersionFile(updateInfo) {
             }
         }
 
-        const existingEntry = versionData.find(entry => entry.url === updateInfo.url);
+        const existingEntry = versionData.find(entry => 
+            entry.url === updateInfo.url &&
+            entry.version === updateInfo.version 
+        );
         if (!existingEntry) {
             versionData.unshift({
                 name: updateInfo.version_info,

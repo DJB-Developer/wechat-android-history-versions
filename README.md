@@ -19,13 +19,9 @@ https://dldir1.qq.com/weixin/android/weixin{version}android{v20step}.apk
 |  :----  | :----  | :----  |
 | 微信 8.0.53 for Android  | (2024-10-12) | [https://dldir1.qq.com/weixin/android/weixin8053android2740_0x28003533_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8053android2740_0x28003533_arm64.apk) |
 | 微信 8.0.53 for Android  | (2024-10-12) | [https://dldir1.qq.com/weixin/android/weixin8053android2740_0x28003532_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8053android2740_0x28003532_arm64.apk) |
-| 微信 8.0.51 for Android  | (2024-09-14) | [https://dldir1.qq.com/weixin/android/weixin8053android2740_0x28003532_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8053android2740_0x28003532_arm64.apk) |
-| 微信 8.0.51 for Android  | (2024-09-14) | [https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003334_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003334_arm64.apk) |
-| 微信 8.0.51 for Android  | (2024-09-14) | [https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003333_arm64_1.apk](https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003333_arm64_1.apk) |
 | 微信 8.0.51 for Android  | (2024-09-14) | [https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003334_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003334_arm64.apk) |
 | 微信 8.0.51 for Android  | (2024-09-14) | [https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003333_arm64_1.apk](https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003333_arm64_1.apk) |
 | 微信 8.0.51 for Android  | (2024-09-14) | [https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003332_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003332_arm64.apk) |
-| 微信 8.0.50 for Android  | (2024-07-02) | [https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003332_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8051android2720_0x28003332_arm64.apk) |
 | 微信 8.0.50 for Android  | (2024-07-02) | [https://dldir1.qq.com/weixin/android/weixin8050android2701_0x28003294_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8050android2701_0x28003294_arm64.apk) |
 | 微信 8.0.50 for Android  | (2024-07-02) | [https://dldir1.qq.com/weixin/android/weixin8050android2701_0x2800323e_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8050android2701_0x2800323e_arm64.apk) |
 | 微信 8.0.50 for Android  | (2024-07-02) | [https://dldir1.qq.com/weixin/android/weixin8050android2701_0x2800323c_arm64.apk](https://dldir1.qq.com/weixin/android/weixin8050android2701_0x2800323c_arm64.apk) |
