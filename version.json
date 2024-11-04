@@ -848,7 +848,7 @@
   },
   {
     "name": "微信 6.1 for Android",
-    "version": "",
+    "version": "6.1",
     "release_date": "2015-01-20",
     "url": "https://dldir1.qq.com/weixin/android/weixin610android540.apk",
     "updated": 1421712000000
@@ -862,14 +862,14 @@
   },
   {
     "name": "微信 6.0 for Android",
-    "version": "",
+    "version": "6.0",
     "release_date": "2014-10-24",
     "url": "https://dldir1.qq.com/weixin/android/weixin60android500.apk",
     "updated": 1414108800000
   },
   {
     "name": "微信 5.4 for Android",
-    "version": "",
+    "version": "5.4",
     "release_date": "2014-08-28",
     "url": "https://dldir1.qq.com/weixin/android/weixin540android480.apk",
     "updated": 1409184000000
