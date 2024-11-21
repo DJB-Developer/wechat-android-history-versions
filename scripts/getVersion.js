@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 
-const url = 'https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_faq_list';
+const url = 'https://weixin.qq.com/updates';
 const readmeFilePath = './README.md';
 const versionFilePath = './version.json';
 
@@ -69,29 +69,32 @@ async function updateVersionFile(updateInfo) {
 }
 
 function getUpdateUri(html) {
-    const pattern = /\/cgi-bin\/readtemplate\?lang=zh_CN&t=page\/faq\/android\/(\d+)\/index&faq=android_\1/;
-    const matches = html.match(pattern);
-    return matches ? `https://weixin.qq.com${matches[0]}` : false;
-}
-
-function getUpdateInfo(html) {
-    const pattern_date = /发布日期： (\d{4}-\d{2}-\d{2})/;
-    const pattern_version = /发布版本： (.*?)</;
-    const pattern_link = /<a\s+href=(.*?)\s+target=_blank>下载最新版本<\/a>/i;
-    const update_date = html.match(pattern_date);
-    const update_version = html.match(pattern_version);
-    const update_link = html.match(pattern_link);
-    if (update_date && update_version && update_link) {
-        return {
-            text: `| ${update_version[1]} | (${update_date[1]}) | [${update_link[1]}](${update_link[1]}) |`,
-            version_info: update_version[1],
-            url: update_link[1],
-            fileName: update_link[1].split('/')[5],
-            version: update_version[1].split(' ')[1],
-            release_date: update_date[1]
-        };
+    const pattern = /<section id="android"[^>]*>[\s\S]*?<ul class="faq_section_sublist"[^>]*>[\s\S]*?<li class="faq_section_sublist_item"[^>]*>[\s\S]*?<a class="current"[^>]*>[\s\S]*?<span class="version"[^>]*>([\d.]+)<\/span>/;
+    const match = html.match(pattern);
+    if (match) {
+        const version = match[1].trim();
+        const versionNum = version.replace(/\./g, '');
+        // console.log(versionNum);
+        return `https://weixin.qq.com/api/updates_items?platform=android&version=${versionNum}`;
     }
     return false;
+}
+
+function getUpdateInfo(jsonStr) {
+    try {
+        const data = JSON.parse(jsonStr);
+        return {
+            text: `| 微信 ${data.version} for Android  | (${data.publishDate}) | [${data.downloadUrl}](${data.downloadUrl}) |`,
+            version_info: `微信 ${data.version} for Android`,
+            url: data.downloadUrl,
+            fileName: data.downloadUrl.split('/').pop(),
+            version: data.version,
+            release_date: data.publishDate
+        };
+    } catch (error) {
+        console.error('解析JSON数据时出错:', error);
+        return false;
+    }
 }
 
 get(url);
