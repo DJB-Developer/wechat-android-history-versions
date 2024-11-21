@@ -57,7 +57,7 @@ async function updateVersionFile(updateInfo) {
             versionData.unshift({
                 name: updateInfo.version_info,
                 version: updateInfo.version,
-                release_date: updateInfo.release_date,
+                publish_date: updateInfo.publish_date,
                 url: updateInfo.url,
                 updated: new Date().getTime()
             });
@@ -89,7 +89,7 @@ function getUpdateInfo(jsonStr) {
             url: data.downloadUrl,
             fileName: data.downloadUrl.split('/').pop(),
             version: data.version,
-            release_date: data.publishDate
+            publish_date: data.publishDate
         };
     } catch (error) {
         console.error('解析JSON数据时出错:', error);
