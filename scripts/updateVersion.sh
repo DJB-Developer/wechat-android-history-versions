@@ -27,7 +27,7 @@ function wechat_download() {
 
 function prepare_commit() {
     apk_sum256=`shasum -a 256 wechatAndroid/$file_name | awk '{print $1}'`
-    apk_version="$version_info"`date -u '+%Y%m%d'`
+    apk_version="$version_info "`date -u '+%Y%m%d'`
     echo "发布版本: $version" > ./wechatAndroid/$file_name.sha256
     echo "更新日期: $(date -u '+%Y-%m-%d %H:%M:%S') (UTC)" >> ./wechatAndroid/$file_name.sha256
     echo "下载地址: $download_link" >> ./wechatAndroid/$file_name.sha256

@@ -28,10 +28,17 @@ async function updateREADME(text) {
     try {
         const data = await fs.readFile(readmeFilePath, 'utf8');
         const lines = data.split('\n');
-        if (lines[19] !== text) {
-            lines.splice(19, 0, text);
-            const modifiedContent = lines.join('\n');
-            await fs.writeFile(readmeFilePath, modifiedContent, 'utf8');
+        
+        const tableHeaderIndex = lines.findIndex(line => 
+            line.includes('|  :----  | :----  | :----  |')
+        );
+        
+        if (tableHeaderIndex !== -1) {
+            if (lines[tableHeaderIndex + 1] !== text) {
+                lines.splice(tableHeaderIndex + 1, 0, text);
+                const modifiedContent = lines.join('\n');
+                await fs.writeFile(readmeFilePath, modifiedContent, 'utf8');
+            }
         }
     } catch (error) {
         console.error('更新 README 文件时出错:', error);
