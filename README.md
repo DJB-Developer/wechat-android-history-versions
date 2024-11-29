@@ -142,6 +142,6 @@ https://dldir1.qq.com/weixin/android/weixin{version}android{v20step}.apk
 | 微信 6.2 for Android  | (2015-05-26) | [https://dldir1.qq.com/weixin/android/weixin620android560.apk](https://dldir1.qq.com/weixin/android/weixin620android560.apk) |
 | 微信 6.1 for Android  | (2015-01-20) | [https://dldir1.qq.com/weixin/android/weixin610android540.apk](https://dldir1.qq.com/weixin/android/weixin610android540.apk) |
 | 微信 6.0.2 for Android  | (2014-12-24) | [https://dldir1.qq.com/weixin/android/weixin602android520.apk](https://dldir1.qq.com/weixin/android/weixin602android520.apk) |
-| 微信 6.0 for Android  | (2014-10-24) | ~~[https://dldir1.qq.com/weixin/android/weixin60android500.apk](https://dldir1.qq.com/weixin/android/weixin60android500.apk)~~ |
+| 微信 6.0 for Android  | (2014-10-24) | [https://dldir1.qq.com/weixin/android/weixin600android501.apk](https://dldir1.qq.com/weixin/android/weixin600android501.apk) |
 | 微信 5.4 for Android  | (2014-08-28) | [https://dldir1.qq.com/weixin/android/weixin540android480.apk](https://dldir1.qq.com/weixin/android/weixin540android480.apk) |
 | 微信 5.3.1 for Android  | (2014-06-27) | [https://dldir1.qq.com/weixin/android/weixin531android460.apk](https://dldir1.qq.com/weixin/android/weixin531android460.apk) |
