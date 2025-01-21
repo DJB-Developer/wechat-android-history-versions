@@ -17,6 +17,7 @@ https://dldir1.qq.com/weixin/android/weixin{version}android{v20step}.apk
 
 | 软件版本  | 发布日期  | 下载地址  |
 |  :----  | :----  | :----  |
+| 微信 8.0.56 for Android  | (2025-01-07) | [https://dldir1v6.qq.com/weixin/android/weixin8056android2800_0x2800383c_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8056android2800_0x2800383c_arm64.apk) |
 | 微信 8.0.56 for Android  | (2025-01-07) | [https://dldir1v6.qq.com/weixin/android/weixin8056android2800_0x28003832_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8056android2800_0x28003832_arm64.apk) |
 | 微信 8.0.55 for Android  | (2024-12-16) | [https://dldir1v6.qq.com/weixin/android/weixin8055android2780_0x28003734_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8055android2780_0x28003734_arm64.apk) |
 | 微信 8.0.55 for Android  | (2024-12-16) | [https://dldir1v6.qq.com/weixin/android/weixin8055android2780_0x28003733_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8055android2780_0x28003733_arm64.apk) |
