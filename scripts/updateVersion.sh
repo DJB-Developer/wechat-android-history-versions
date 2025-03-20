@@ -27,9 +27,7 @@ function main() {
     latest_sum256=`shasum -a 256 README.md | awk '{print $1}'`
     if [ "$now_sum256" != "$latest_sum256" ]; then
         git add README.md version.json && git commit -m "$version_info" && git push origin main
-        exit 0
     fi
-    exit 1
 }
 
 main

@@ -25,7 +25,7 @@ function wechat_download() {
     if [ "$?" -ne 0 ]; then
         >&2 echo -e "下载失败，请检查网络连接！"
         rm -rf wechatAndroid
-        exit 1
+        exit 0
     fi
 }
 
