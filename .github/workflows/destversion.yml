@@ -15,18 +15,9 @@ jobs:
         with:
           node-version: '20.x'
       - name: Check new version and push
-        id: check_version
         env: 
           GHTOKEN: ${{ secrets.GHTOKEN }}
           GH_TOKEN: ${{ github.token }}
-        run: |
+        run: 
           bash -x ./scripts/updateVersion.sh
-          echo "has_new_version=$?" >> $GITHUB_OUTPUT
-      - name: Download and Release
-        if: steps.check_version.outputs.has_new_version == '0'
-        env: 
-          GHTOKEN: ${{ secrets.GHTOKEN }}
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          bash -x ./scripts/downloadAndRelease.sh
           
