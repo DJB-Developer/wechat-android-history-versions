@@ -76,7 +76,7 @@ async function updateVersionFile(updateInfo) {
 }
 
 function getUpdateUri(html) {
-    const pattern = /<section id="android"[^>]*>[\s\S]*?<ul class="faq_section_sublist"[^>]*>[\s\S]*?<li class="faq_section_sublist_item"[^>]*>[\s\S]*?<a class="current"[^>]*>[\s\S]*?<span class="version"[^>]*>([\d.]+)<\/span>/;
+    const pattern = /<section id="android"[^>]*>[\s\S]*?<ul class="faq_section_sublist"[^>]*>[\s\S]*?<li class="faq_section_sublist_item"[^>]*>[\s\S]*?<span class="version"[^>]*>([\d.]+)<\/span>/;
     const match = html.match(pattern);
     if (match) {
         const version = match[1].trim();
