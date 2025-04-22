@@ -9,7 +9,6 @@ async function get(url) {
         const response = await fetch(url);
         const data = await response.text();
         const updateUrl = getUpdateUri(data);
-        console.log(updateUrl);
         if (updateUrl) {
             const updateResp = await fetch(updateUrl);
             const updateData = await updateResp.text();
@@ -77,7 +76,7 @@ async function updateVersionFile(updateInfo) {
 }
 
 function getUpdateUri(html) {
-    const pattern = /<section id="android"[^>]*>[\s\S]*?<ul class="faq_section_sublist"[^>]*>[\s\S]*?<li class="faq_section_sublist_item"[^>]*>[\s\S]*?<span class="version"[^>]*>([\d.]+)<\/span>/;
+    const pattern = /<section id="android"[^>]*>[\s\S]*?<ul class="faq_section_sublist"[^>]*>[\s\S]*?<li class="faq_section_sublist_item"[^>]*>[\s\S]*?<a class="current"[^>]*>[\s\S]*?<span class="version"[^>]*>([\d.]+)<\/span>/;
     const match = html.match(pattern);
     if (match) {
         const version = match[1].trim();
