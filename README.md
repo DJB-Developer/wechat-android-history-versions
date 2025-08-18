@@ -2,10 +2,9 @@
 
 微信Android 历史版本
 
-感谢 [@stornado](https://github.com/stornado/wechat-android-history-versions/) 提供思路
+微信安卓版官方下载地址, 所有下载链接均来自官网
 
-下载地址基本格式  
-https://dldir1.qq.com/weixin/android/weixin{version}android{v20step}.apk
+各版本更新日志可参见官网 [changelog](https://weixin.qq.com/updates)
 
 相关项目  
 
