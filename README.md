@@ -18,19 +18,7 @@
 |  :----  | :----  | :----  |
 | 微信 8.0.74 for Android  | (2026-06-08) | [https://dldir1v6.qq.com/weixin/android/weixin8074android3120_0x28004a34_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8074android3120_0x28004a34_arm64.apk) |
 | 微信 8.0.72 for Android  | (2026-05-15) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk) |
-| 微信 8.0.64 for Android  | (2025-09-29) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk) |
-| 微信 8.0.72 for Android  | (2026-05-15) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk) |
-| 微信 8.0.64 for Android  | (2025-09-29) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk) |
-| 微信 8.0.72 for Android  | (2026-05-15) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk) |
-| 微信 8.0.64 for Android  | (2025-09-29) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk) |
-| 微信 8.0.72 for Android  | (2026-05-15) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk) |
-| 微信 8.0.64 for Android  | (2025-09-29) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk) |
-| 微信 8.0.72 for Android  | (2026-05-15) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004835_arm64.apk) |
 | 微信 8.0.72 for Android  | (2026-05-15) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004834_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004834_arm64.apk) |
-| 微信 8.0.72 for Android  | (2026-05-15) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk) |
-| 微信 8.0.64 for Android  | (2025-09-29) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk) |
-| 微信 8.0.72 for Android  | (2026-05-15) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk) |
-| 微信 8.0.64 for Android  | (2025-09-29) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk) |
 | 微信 8.0.72 for Android  | (2026-05-15) | [https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8072android3100_0x28004833_arm64.apk) |
 | 微信 8.0.71 for Android  | (2026-04-21) | [https://dldir1v6.qq.com/weixin/android/weixin8071android3080_0x28004734_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8071android3080_0x28004734_arm64.apk) |
 | 微信 8.0.71 for Android  | (2026-04-21) | [https://dldir1v6.qq.com/weixin/android/weixin8071android3080_0x28004733_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8071android3080_0x28004733_arm64.apk) |

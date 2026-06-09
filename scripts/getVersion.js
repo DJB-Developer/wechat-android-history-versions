@@ -14,9 +14,11 @@ async function get(url) {
             const updateData = await updateResp.text();
             const updateInfo = getUpdateInfo(updateData);
             if (updateInfo) {
-                await updateREADME(updateInfo.text);
-                await updateVersionFile(updateInfo);
-                console.log(`${updateInfo.version_info}|${updateInfo.url}|${updateInfo.version}|${updateInfo.fileName}`);
+                const added = await updateREADME(updateInfo);
+                const versionAdded = await updateVersionFile(updateInfo);
+                if (added || versionAdded) {
+                    console.log(`${updateInfo.version_info}|${updateInfo.url}|${updateInfo.version}|${updateInfo.fileName}`);
+                }
             }
         }
     } catch (error) {
@@ -24,25 +26,27 @@ async function get(url) {
     }
 }
 
-async function updateREADME(text) {
+async function updateREADME(updateInfo) {
     try {
         const data = await fs.readFile(readmeFilePath, 'utf8');
+        if (data.includes(updateInfo.url)) {
+            return false;
+        }
+
         const lines = data.split('\n');
-        
-        const tableHeaderIndex = lines.findIndex(line => 
+        const tableHeaderIndex = lines.findIndex(line =>
             line.includes('|  :----  | :----  | :----  |')
         );
-        
+
         if (tableHeaderIndex !== -1) {
-            if (lines[tableHeaderIndex + 1] !== text) {
-                lines.splice(tableHeaderIndex + 1, 0, text);
-                const modifiedContent = lines.join('\n');
-                await fs.writeFile(readmeFilePath, modifiedContent, 'utf8');
-            }
+            lines.splice(tableHeaderIndex + 1, 0, updateInfo.text);
+            await fs.writeFile(readmeFilePath, lines.join('\n'), 'utf8');
+            return true;
         }
     } catch (error) {
         console.error('更新 README 文件时出错:', error);
     }
+    return false;
 }
 
 async function updateVersionFile(updateInfo) {
@@ -56,23 +60,24 @@ async function updateVersionFile(updateInfo) {
             }
         }
 
-        const existingEntry = versionData.find(entry => 
-            entry.url === updateInfo.url &&
-            entry.version === updateInfo.version 
-        );
-        if (!existingEntry) {
-            versionData.unshift({
-                name: updateInfo.version_info,
-                version: updateInfo.version,
-                publish_date: updateInfo.publish_date,
-                url: updateInfo.url,
-                updated: new Date().getTime()
-            });
-            await fs.writeFile(versionFilePath, JSON.stringify(versionData, null, 2), 'utf8');
+        const existingEntry = versionData.find(entry => entry.url === updateInfo.url);
+        if (existingEntry) {
+            return false;
         }
+
+        versionData.unshift({
+            name: updateInfo.version_info,
+            version: updateInfo.version,
+            publish_date: updateInfo.publish_date,
+            url: updateInfo.url,
+            updated: new Date().getTime()
+        });
+        await fs.writeFile(versionFilePath, JSON.stringify(versionData, null, 2), 'utf8');
+        return true;
     } catch (error) {
         console.error('更新 version.json 文件时出错:', error);
     }
+    return false;
 }
 
 function getUpdateUri(html) {
@@ -81,7 +86,6 @@ function getUpdateUri(html) {
     if (match) {
         const version = match[1].trim();
         const versionNum = version.replace(/\./g, '');
-        // console.log(versionNum);
         return `https://weixin.qq.com/api/updates_items?platform=android&version=${versionNum}`;
     }
     return false;
