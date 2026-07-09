@@ -95,7 +95,7 @@ function getUpdateInfo(jsonStr) {
     try {
         const data = JSON.parse(jsonStr);
         return {
-            text: `| 微信 ${data.version} for Android  | (${data.publishDate}) | [${data.downloadUrl}](${data.downloadUrl}) |`,
+            text: `| 微信 ${data.version} for Android  | (${data.publishDate}) | [${data.version} Android](${data.downloadUrl}) |`,
             version_info: `微信 ${data.version} for Android`,
             url: data.downloadUrl,
             fileName: data.downloadUrl.split('/').pop(),

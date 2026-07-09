@@ -4,7 +4,7 @@ const readmeFilePath = './README.md';
 const versionFilePath = './version.json';
 
 function extractUrlsFromReadme(content) {
-    const pattern = /^\|[^|]+\|[^|]+\|\s*\[[^\]]+\]\((https:\/\/dldir1v6\.qq\.com\/weixin\/android\/[^)]+)\)\s*\|/gm;
+    const pattern = /^\|[^|]+\|[^|]+\|\s*\[[^\]]+\]\((https:\/\/dldir1(v6)?\.qq\.com\/weixin\/android\/[^)]+)\)\s*\|/gm;
     const urls = [];
     let match;
     while ((match = pattern.exec(content)) !== null) {
